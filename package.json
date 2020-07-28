@@ -1,0 +1,24 @@
+{
+  "name": "swapbot",
+  "version": "0.0.1",
+  "description": "a bot for anyswap vol mining",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "pm2 start src/bot.js --name swapbot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:bin0z/swapbot.git"
+  },
+  "keywords": [
+    "bot",
+    "mining",
+    "vol",
+    "anyswap"
+  ],
+  "author": "Bin0z",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.2.11"
+  }
+}
