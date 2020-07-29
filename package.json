@@ -20,5 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "web3": "^1.2.11"
+  },
+  "devDependencies": {
+    "pm2": "^4.4.0"
   }
 }
