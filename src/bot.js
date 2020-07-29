@@ -56,6 +56,7 @@ async function sell(number, deadline) {
 
 
 async function handleBuy(data) {
+    var buyNumber = calcBuyNumber(data);
     if (buyNumber.isGreaterThan(Big0)) {
         var deadline = data.cycle.blockTime + Config.delay
         console.log("buy", buyNumber.dividedBy(BIG_ONE_UTIL).toNumber(), deadline);
@@ -77,7 +78,7 @@ async function handleSell(data) {
 }
 
 async function handleCycle(data) {
-    if (data.cycle.index == 98) {        
+    if (data.cycle.index == 98) {
         await handleBuy(data);  // last block buy
     } else {
         console.log("handle sell");
